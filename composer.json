@@ -4,7 +4,7 @@
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "require": {
-    "dpc-sdp/tide_core": "dev-feature/lock_field_group as 1.4.1",
+    "dpc-sdp/tide_core": "dev-develop as 1.4.1",
     "drupal/yaml_content": "^1.0"
   },
   "repositories": {
