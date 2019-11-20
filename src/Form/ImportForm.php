@@ -119,9 +119,9 @@ class ImportForm extends FormBase {
         try {
           $this->contentLoader->setContentPath($temp_dir);
           $entities = $this->contentLoader->loadContent($temp_name);
-          $this->messenger()->addMessage($this->formatPlural(count($entities), '1 demo entity has been imported.', '@count demo entities have been imported.').' Only node and media type entities are listed below - ');
+          $this->messenger()->addMessage($this->formatPlural(count($entities), '1 demo entity has been imported.', '@count demo entities have been imported.') . ' Only node and media type entities are listed below - ');
           if (!empty($entities)) {
-            foreach($entities as $entity) {
+            foreach ($entities as $entity) {
               if ($entity->getEntityTypeId() == 'node' || $entity->getEntityTypeId() == 'media') {
                 $this->messenger()->addMessage(t('@entity_type/@entity_id', [
                   '@entity_type' => $entity->getEntityTypeId(),
